@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-   string def_program = "This program takes loan amount and interest rate as an input and calculates the monthly payment and the remening loan for each month";
+   string def_program = "This program takes loan amount and interest rate as an input and calculates the monthly payment and the remaining loan for each month";
    cout<< def_program<<"\n"<<endl;
    program:
    cout<<"Enter the loan amount\t";
    float loan;
    cin>>loan;
   
-   cout<<"Inter the interest rate\t";
+   cout<<"Enter the interest rate\t";
    float interest;
    cin>>interest;
    interest /= 100;
@@ -19,7 +19,7 @@ int main() {
    float this_month_interest;
    float remaining_month_payment;
    int month = 1;
-   cout<<"month\t monthly payment\t remaining loan"<<endl;
+   cout<<"Month\t Monthly payment\t Remaining loan"<<endl;
    while (loan > 0){
        
        this_month_interest = (loan * interest)/12;
