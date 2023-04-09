@@ -4,6 +4,7 @@
 using namespace std;
 int main() {
     char n;
+    char *ptr;
     cout<<"Enter any value you want: \n";
     cin>>n;
     if (n>='1'){
@@ -12,7 +13,8 @@ int main() {
             int num =  7 - abs(7 - j);
             int num2 =  7 - abs(7 - i);
             if (num + num2 <= 7){
-                cout<<char(num+ 65)<<" ";
+                ptr = new char (char(num+65));
+                cout<<*ptr<<" ";
             }
             else{
                 cout<<"  ";
